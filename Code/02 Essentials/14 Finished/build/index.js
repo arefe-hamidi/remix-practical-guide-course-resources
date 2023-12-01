@@ -751,54 +751,55 @@ function ErrorBoundary2({ error }) {
 // app/routes/index.jsx
 var routes_exports = {};
 __export(routes_exports, {
-  default: () => Index,
-  links: () => links6
+  default: () => Index
 });
-var import_react8 = require("@remix-run/react");
-
-// app/styles/home.css
-var home_default = "/build/_assets/home-PJIINAIX.css";
-
-// app/routes/index.jsx
-var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+var import_react8 = require("@remix-run/react"), import_styled_components = __toESM(require("styled-components")), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), TryButton = import_styled_components.default.p`
+  margin-top: 2rem;
+ a {
+  text-decoration: none;
+  background-color: var(--color-secondary-100);
+  color: var(--color-primary-800);
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+a:hover {
+  background-color: var(--color-secondary-200);
+}
+`, Content = import_styled_components.default.main`
+text-align: center;
+color: var(--color-primary-10);
+`;
 function Index() {
-  let tryButton = styled.p`
-  a:hover {
-    background-color: var(--color-secondary-200);
-  }
-  `;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", { id: "content", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Content, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", { children: "A better way of keeping track of your notes" }, void 0, !1, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 13,
+      lineNumber: 25,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { children: "Try our early beta and never loose track of your notes again!" }, void 0, !1, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 14,
+      lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("tryButton", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, { to: "/notes", children: "Try Now!" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(TryButton, { className: "button-text", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, { to: "/notes", children: "Try Now!" }, void 0, !1, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 16,
+      lineNumber: 28,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 15,
+      lineNumber: 27,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/index.jsx",
-    lineNumber: 12,
+    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
-function links6() {
-  return [{ rel: "stylesheet", href: home_default }];
-}
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-TSFLD62C.js", imports: ["/build/_shared/chunk-QNB3LOXN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-JUAHVDUZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-4CVUHMPB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes/$noteId": { id: "routes/notes/$noteId", parentId: "root", path: "notes/:noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes/$noteId-S7IPUUFL.js", imports: ["/build/_shared/chunk-N3CP4YTH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes/index": { id: "routes/notes/index", parentId: "root", path: "notes", index: !0, caseSensitive: void 0, module: "/build/routes/notes/index-2AUXFVTH.js", imports: ["/build/_shared/chunk-N3CP4YTH.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 } }, version: "1dc700a3", hmr: void 0, url: "/build/manifest-1DC700A3.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-TSFLD62C.js", imports: ["/build/_shared/chunk-QNB3LOXN.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-JUAHVDUZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-XSVPEOKE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes/$noteId": { id: "routes/notes/$noteId", parentId: "root", path: "notes/:noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes/$noteId-S7IPUUFL.js", imports: ["/build/_shared/chunk-N3CP4YTH.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes/index": { id: "routes/notes/index", parentId: "root", path: "notes", index: !0, caseSensitive: void 0, module: "/build/routes/notes/index-2AUXFVTH.js", imports: ["/build/_shared/chunk-N3CP4YTH.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 } }, version: "00270fb5", hmr: void 0, url: "/build/manifest-00270FB5.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !1, v2_normalizeFormMethod: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
